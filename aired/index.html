@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Aired</title>
+<style>
+  :root {
+    --text: #2a1f15;
+    --muted: #6b5d4d;
+    --gold: #c9a86b;
+    --bg: #faf6ee;
+    --surface: #ffffff;
+    --border: #e8dec9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    margin: 0 0 8px;
+    color: var(--text);
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 14px;
+  }
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    margin: 40px 0 12px;
+    color: var(--text);
+    border-left: 3px solid var(--gold);
+    padding-left: 12px;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 20px 0 8px;
+    color: var(--text);
+  }
+  p, li { font-size: 16px; }
+  ul { padding-left: 24px; }
+  li { margin-bottom: 6px; }
+  a { color: #8a6a30; text-decoration: underline; }
+  a:hover { color: var(--gold); }
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+  .contact-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-top: 12px;
+  }
+  .contact-box p { margin: 4px 0; }
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Aired · Effective 29 May 2026 · Last updated 29 May 2026</p>
+</header>
+
+<h2>1. Introduction</h2>
+<p>
+  This Privacy Policy explains how <strong>Nosa Studio</strong> ("we", "us", "our") handles personal data
+  when you use the <strong>Aired</strong> mobile application ("the App") for iOS and Android, distributed via
+  the Apple App Store and Google Play. We are based in Switzerland, and we comply with the EU General Data
+  Protection Regulation (GDPR) for users in the European Economic Area as well as the Swiss Federal Act on
+  Data Protection (revFADP) for users in Switzerland.
+</p>
+<p>
+  Aired is a shared mental load app for couples and families. You write down the things on your mind into
+  a shared <strong>Space</strong>, and the people in that Space — typically your partner — can voluntarily
+  claim them. The App is built around two ideas worth flagging up front: <strong>your account uses your
+  email for sign-in</strong> (via a one-tap magic link), and <strong>the items you add to a shared Space
+  are visible to the other members of that Space</strong>. We do not sell, rent, or share your personal
+  data with third parties for marketing or advertising.
+</p>
+
+<h2>2. Data We Collect</h2>
+
+<h3>2.1 Email address (for sign-in)</h3>
+<p>
+  When you create an account, we collect your <strong>email address</strong> so that we can send you a
+  magic-link sign-in email. The magic link is a one-time URL that signs you into the App when tapped; we do
+  not store passwords. Your email is processed by our authentication provider, <strong>Supabase</strong>,
+  in their EU region.
+</p>
+
+<h3>2.2 Items and notes you write (your shared pool)</h3>
+<p>
+  The core feature of Aired is a shared pool of items. When you add an item, the App stores the item's
+  <strong>title</strong>, any <strong>notes</strong> you attach, the auto-detected <strong>category</strong>,
+  the timestamps, and the current <strong>status</strong> (in-air, claimed, done). This data is stored in
+  our database hosted by <strong>Supabase</strong> in the EU region, and is synchronized to the devices of
+  the other members of the same Space so they can see and pick items up.
+</p>
+<div class="callout">
+  <strong>Partner visibility:</strong> items you add to a shared Space are visible to all current members
+  of that Space, along with who added them, who claimed them, and who cleared them. Items are not visible
+  to people outside your Space. Aired does <strong>not</strong> have public feeds or social sharing.
+</div>
+
+<h3>2.3 Profile data you choose to add</h3>
+<p>
+  You may optionally provide a <strong>display name</strong> shown to other members of your Space (e.g.
+  "Maya" next to items you claimed). You may also choose a Space name. Both are optional and editable at
+  any time in Settings.
+</p>
+
+<h3>2.4 In-app purchase data</h3>
+<p>
+  When you subscribe to a paid tier or restore a previous purchase, the transaction is processed by
+  <strong>Apple In-App Purchase</strong> on iOS or <strong>Google Play Billing</strong> on Android. We use
+  <strong>RevenueCat</strong> to manage subscription state across both platforms. We receive a purchase
+  token and entitlement status that allow the App to verify your subscription; we do not see or store your
+  payment card details.
+</p>
+
+<h3>2.5 Anonymous usage analytics</h3>
+<p>
+  The App uses <strong>PostHog</strong> (EU region) to collect anonymous usage analytics that help us
+  understand which features are used and where users encounter issues. The data sent is anonymous and
+  contains no personally identifying information (no email, no item contents, no display name, no precise
+  location). Examples of events we may collect:
+</p>
+<ul>
+  <li>Onboarding completion</li>
+  <li>Selected Space type (Solo / Duo / Family)</li>
+  <li>Anonymous feature interaction counters (item added, item claimed, item cleared)</li>
+  <li>Crash and error diagnostics</li>
+</ul>
+<p>
+  PostHog assigns a randomly generated identifier to each install. This identifier is reset when the App's
+  data is cleared or the App is uninstalled.
+</p>
+
+<h2>3. How We Use Data</h2>
+<ul>
+  <li><strong>To sign you in:</strong> sending you a magic-link email and validating it when you tap it.</li>
+  <li><strong>To provide the core feature:</strong> storing the items in your shared pool and
+    synchronizing them to the other members of your Space so they can see and pick them up.</li>
+  <li><strong>To verify purchases:</strong> processing App Store / Play Billing purchase tokens via
+    RevenueCat to enable paid features for subscribers.</li>
+  <li><strong>To improve the App:</strong> analyzing aggregated, anonymous usage patterns to fix bugs
+    and prioritize features.</li>
+</ul>
+<div class="callout">
+  We do <strong>not</strong> use your data for advertising, profiling, or automated decision-making with
+  legal effects. We do <strong>not</strong> sell your personal data. We do <strong>not</strong> read the
+  contents of your items for marketing purposes.
+</div>
+
+<h2>4. Sharing Within Your Space</h2>
+<p>
+  Aired is built around the idea that the things on your mind become visible to the people you choose to
+  share with — usually your partner. To keep this transparent:
+</p>
+<ul>
+  <li>Every member of your Space sees every item in that Space, including who added it, who claimed it,
+    and who cleared it.</li>
+  <li>Members of your Space do <strong>not</strong> see your email address, your subscription tier, or
+    your billing data.</li>
+  <li>Invite codes (six characters) are how people join your Space. Anyone with a valid, unexpired invite
+    code can join until you regenerate it. You can regenerate the code at any time in Settings to revoke
+    pending invites.</li>
+  <li>If you leave a Space, your historical items remain visible to the remaining members (because they
+    are part of their shared pool), but you no longer have access to that Space.</li>
+</ul>
+
+<h2>5. Third-Party Services</h2>
+<p>The App relies on the following processors:</p>
+
+<h3>5.1 Supabase (Supabase Inc.)</h3>
+<p>
+  Supabase provides our authentication, database, and real-time synchronization. Your email, your items,
+  and your Space membership are stored in our Supabase project hosted in the <strong>EU region</strong>.
+  Supabase's privacy policy is available at:
+  <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>.
+</p>
+
+<h3>5.2 RevenueCat (RevenueCat, Inc.)</h3>
+<p>
+  RevenueCat manages subscription entitlements across the App Store and Google Play. RevenueCat receives
+  the platform purchase token and the anonymous RevenueCat user identifier; it does not receive your
+  email or your items. RevenueCat's privacy policy:
+  <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>.
+</p>
+
+<h3>5.3 Apple App Store and Google Play</h3>
+<p>
+  The App Store and Google Play handle distribution, in-app purchase processing, and subscription billing.
+  Apple's and Google's processing of your payment and account information is governed by their respective
+  privacy policies:
+  <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>
+  and
+  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+</p>
+
+<h3>5.4 PostHog (PostHog Inc.)</h3>
+<p>
+  PostHog is the analytics provider we use for anonymous product analytics and crash diagnostics. Our
+  PostHog instance is configured to operate in the EU region without collecting personally identifying
+  information. PostHog's privacy policy is available at:
+  <a href="https://posthog.com/privacy" target="_blank" rel="noopener">posthog.com/privacy</a>.
+</p>
+
+<h2>6. Data Retention</h2>
+<ul>
+  <li><strong>Email address and account:</strong> retained while your account is active. Deletion of your
+    account erases your email from our authentication database within 30 days.</li>
+  <li><strong>Items and notes:</strong> retained while your account or Space is active. Items you "clear"
+    remain visible in the Done list of your Space for the rolling window the App displays, then are
+    purged. If you delete your account, items you authored are removed; items authored by other Space
+    members remain in their shared pool.</li>
+  <li><strong>Magic-link tokens:</strong> short-lived. Each magic link expires after a limited window
+    (typically one hour) and can only be used once.</li>
+  <li><strong>Subscription / purchase tokens:</strong> retained for as long as your subscription is active,
+    and for up to 24 months thereafter for accounting and audit purposes.</li>
+  <li><strong>Anonymous analytics:</strong> retained by PostHog for up to 12 months, then aggregated or
+    deleted.</li>
+</ul>
+
+<h2>7. Your Rights (GDPR / revFADP)</h2>
+<p>
+  If you are located in the EEA, the UK, or Switzerland, you have the following rights regarding your
+  personal data:
+</p>
+<ul>
+  <li><strong>Right of access</strong> — to confirm whether we process your data and obtain a copy.</li>
+  <li><strong>Right to rectification</strong> — to correct inaccurate data we hold about you.</li>
+  <li><strong>Right to erasure</strong> ("right to be forgotten") — to request deletion of your data.</li>
+  <li><strong>Right to restriction of processing</strong> — to limit how we process your data.</li>
+  <li><strong>Right to data portability</strong> — to receive your data in a machine-readable format.</li>
+  <li><strong>Right to object</strong> — to processing based on legitimate interests.</li>
+  <li><strong>Right to withdraw consent</strong> — at any time, where processing is based on consent.</li>
+  <li><strong>Right to lodge a complaint</strong> — with a supervisory authority. In Switzerland, the
+    Federal Data Protection and Information Commissioner (FDPIC); in the EU, your local Data Protection
+    Authority.</li>
+</ul>
+<p>
+  The most direct way to exercise erasure is to use <strong>Settings → Delete account</strong> in the App.
+  You can also export your items as CSV via <strong>Settings → Export my data</strong>. For other rights,
+  or if you need help, contact us at the address below.
+</p>
+
+<h2>8. Children's Privacy</h2>
+<p>
+  The App is not directed at children under 13, and we do not knowingly collect personal data from
+  children. If you believe a child has used the App in a way that resulted in data being collected,
+  please contact us so we can remove the relevant data.
+</p>
+
+<h2>9. Changes to This Policy</h2>
+<p>
+  We may update this Privacy Policy from time to time. Material changes will be communicated through the
+  App's release notes on the App Store and Google Play and/or via an in-app notice. The "Last updated"
+  date at the top of this document reflects the most recent revision.
+</p>
+
+<h2>10. Contact Us</h2>
+<div class="contact-box">
+  <p><strong>Nosa Studio</strong></p>
+  <p>Switzerland</p>
+  <p>Email: <a href="mailto:support.nosastudio@gmail.com">support.nosastudio@gmail.com</a></p>
+</div>
+<p>
+  For data-protection requests (access, correction, deletion, portability, objection), please include
+  "Privacy Request" in the subject line and let us know which right you are exercising. We aim to respond
+  within 30 days.
+</p>
+
+<footer>
+  &copy; 2026 Nosa Studio · This policy is provided in English. Translations may be made available in
+  the App's supported languages; in case of discrepancy the English version prevails.
+</footer>
+
+</div>
+</body>
+</html>
