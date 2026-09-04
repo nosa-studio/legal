@@ -1,0 +1,27 @@
+# This repo is static HTML served by GitHub Pages. There is no build system — no Gradle, no
+# npm, no bundler — so it produces no build output, no dependency directory and no compiled
+# artefact, and this file deliberately names none of those.
+#
+# That omission is the point. The 2026-09-04 S6 audit brought six repos to a credential
+# baseline; copying an Android baseline in here would have listed *.jks, build/, .gradle/,
+# local.properties and thirty more patterns for files this repo cannot produce. A .gitignore
+# that names things a repo cannot produce is noise, and noise is what stops people reading it —
+# the same failure as a check nobody looks at any more.
+#
+# What is listed below is only what can actually appear in a directory somebody edits HTML in.
+
+# Editor and OS droppings — these WILL appear
+.DS_Store
+Thumbs.db
+*.bak
+*.orig
+*~
+.vscode/
+.idea/
+
+# The two credential shapes that can plausibly reach a repo with no build. Neither is used
+# here and neither has ever appeared; they are listed because the audit's finding was that a
+# protection list written from a repo's own incidents protects only against its past.
+# The real PAT lives at C:\Projects\.github_pat, outside every repo.
+.env
+.github_pat
